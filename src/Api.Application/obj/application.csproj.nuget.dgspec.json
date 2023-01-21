@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/application.csproj": {}
+  },
+  "projects": {
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/application.csproj",
+        "projectName": "application",
+        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/application.csproj",
+        "packagesPath": "/home/wandir/.nuget/packages/",
+        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wandir/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ddZKow/0m/4pUcxB9SSFykLVRG1PBMZ4eMWVLd1PSGGRsP6Vtl+3f3V3VbUPxV0r+dOS4oGf2Bpep5+nhorZiw==",
+  "success": true,
+  "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Application/application.csproj",
+  "expectedPackageFiles": [
+    "/home/wandir/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/wandir/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/wandir/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/wandir/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/wandir/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
