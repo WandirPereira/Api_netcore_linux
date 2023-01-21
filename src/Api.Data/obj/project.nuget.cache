@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qjTFb5e8TK+l3D70+BG0ozxBM4a3eWOrC92uERyikG1cbpKhNCHGacmSqEiPLqoGztuKrY9Sdr44bU+bYSYNPQ==",
+  "dgSpecHash": "uBvMjBbfcizfjDhMuCxNIpHAU4MG1i6aXBg+Az0ppkUDaA53uZ4lGOsmU+gc5HG9h+lVUm0XU9DAwrTaauRbXA==",
   "success": true,
   "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj",
   "expectedPackageFiles": [

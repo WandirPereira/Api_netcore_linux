@@ -25,7 +25,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +63,59 @@
               "version": "[7.0.0, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "packagesPath": "/home/wandir/.nuget/packages/",
+        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wandir/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
