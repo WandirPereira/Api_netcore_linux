@@ -10,3 +10,5 @@
 /home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/refint/Data.dll
 /home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.pdb
 /home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/ref/Data.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/bin/Debug/net6.0/Data.runtimeconfig.json
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.genruntimeconfig.cache
