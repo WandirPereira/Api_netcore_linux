@@ -1,0 +1,12 @@
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/bin/Debug/net6.0/Data.deps.json
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/bin/Debug/net6.0/Data.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/bin/Debug/net6.0/Data.pdb
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.csproj.AssemblyReference.cache
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.AssemblyInfoInputs.cache
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.AssemblyInfo.cs
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.csproj.CoreCompileInputs.cache
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/refint/Data.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/Data.pdb
+/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/Debug/net6.0/ref/Data.dll

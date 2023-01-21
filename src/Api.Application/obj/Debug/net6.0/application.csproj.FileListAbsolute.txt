@@ -25,8 +25,3 @@
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/application.pdb
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/application.genruntimeconfig.cache
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/ref/application.dll
-/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.application.Microsoft.AspNetCore.StaticWebAssets.props
-/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.build.application.props
-/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.application.props
-/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.application.props
-/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets.pack.json
