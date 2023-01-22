@@ -12,7 +12,7 @@ namespace Api.Domain.Interface
         Task<T?> UpdateAsync(T item);
         Task<bool> DeleteAsync(Guid id);
         Task<T?> SelectAsync(Guid id);
-        Task<IEnumerable<T>> SelecAsync();
+        Task<IEnumerable<T>> SelectAsync();
         Task<bool> ExistAsync(Guid id);
 
     }

@@ -54,7 +54,7 @@ namespace Api.Data.Repository
             return item;
         }
 
-        public async Task<IEnumerable<T>> SelecAsync()
+        public async Task<IEnumerable<T>> SelectAsync()
         {
             try
             {

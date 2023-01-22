@@ -4,6 +4,191 @@
     "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj": {}
   },
   "projects": {
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj",
+        "projectName": "CrossCutting",
+        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj",
+        "packagesPath": "/home/wandir/.nuget/packages/",
+        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wandir/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj",
+        "projectName": "Data",
+        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj",
+        "packagesPath": "/home/wandir/.nuget/packages/",
+        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wandir/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "packagesPath": "/home/wandir/.nuget/packages/",
+        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/wandir/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +210,17 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj": {
+                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj"
+              },
+              "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj": {
+                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj"
+              },
+              "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
