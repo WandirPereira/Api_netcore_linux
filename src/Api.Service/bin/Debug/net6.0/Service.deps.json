@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "Service/1.0.0": {
         "dependencies": {
-          "CrossCutting": "1.0.0",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },
@@ -632,11 +631,6 @@
           }
         }
       },
-      "CrossCutting/1.0.0": {
-        "runtime": {
-          "CrossCutting.dll": {}
-        }
-      },
       "Data/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
@@ -1107,11 +1101,6 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
-    },
-    "CrossCutting/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Data/1.0.0": {
       "type": "project",

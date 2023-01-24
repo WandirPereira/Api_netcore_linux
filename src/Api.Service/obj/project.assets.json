@@ -1077,16 +1077,6 @@
           }
         }
       },
-      "CrossCutting/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/CrossCutting.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CrossCutting.dll": {}
-        }
-      },
       "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3325,11 +3315,6 @@
         "version.txt"
       ]
     },
-    "CrossCutting/1.0.0": {
-      "type": "project",
-      "path": "../Api.CrossCutting/CrossCutting.csproj",
-      "msbuildProject": "../Api.CrossCutting/CrossCutting.csproj"
-    },
     "Data/1.0.0": {
       "type": "project",
       "path": "../Api.Data/Data.csproj",
@@ -3343,7 +3328,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CrossCutting >= 1.0.0",
       "Data >= 1.0.0",
       "Domain >= 1.0.0"
     ]
@@ -3373,9 +3357,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj": {
-              "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj"
-            },
             "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj": {
               "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj"
             },
@@ -3410,7 +3391,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/wandir/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }

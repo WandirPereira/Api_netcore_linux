@@ -10,3 +10,10 @@
 /home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/obj/Debug/net6.0/refint/CrossCutting.dll
 /home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/obj/Debug/net6.0/CrossCutting.pdb
 /home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/obj/Debug/net6.0/ref/CrossCutting.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Data.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Domain.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Service.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Domain.pdb
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Service.pdb
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/bin/Debug/net6.0/Data.pdb
+/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/obj/Debug/net6.0/CrossCutting.csproj.CopyComplete
