@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Api.Domain.Entities;
 using Api.Domain.Interface.Services.User;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -58,6 +59,40 @@ namespace Api.Application.Controllers
             try
             {
                 return Ok(await _service.Get(id));
+            }
+            catch (ArgumentException e)
+            {
+
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
+            }
+
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+
+                var result = await _service.Post(user);
+
+                if (result != null)
+                {
+                    string? prevUrl = Url.Link("GetWithId", new { id = result.Id });
+
+                    if (!String.IsNullOrEmpty(prevUrl))
+                        return Created(new Uri(prevUrl), result);
+                    else
+                        return BadRequest();
+                }
+                else
+                {
+                    return BadRequest();
+                }
             }
             catch (ArgumentException e)
             {

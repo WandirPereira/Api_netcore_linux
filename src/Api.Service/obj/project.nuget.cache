@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tIO1yUpcq3nH2rpjz/MpZ6tj+El5Zh5DpcfiTwHk0alL2C/euPSsjNq7/tqTEs/6qp12M5RVl/yANRND8PF6vg==",
+  "dgSpecHash": "7i8DPH9U6XHOedZDNV5R0BO6OWthm21ky1bGsiAByAGbl+T5wmTYIvDcVj+O4XgwMnrCu9EXOwWvyYoTHG+AwA==",
   "success": true,
   "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj",
   "expectedPackageFiles": [

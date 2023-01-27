@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2sR6cj84LnKQz2Hf7EAd3rAYKm4ZnN9dPPolFYtvjNW/XIzg94rfDwfVhYK5xJvrFtQattEak+ZSVs7UN9Ykfg==",
+  "dgSpecHash": "Z0jrzUU0NcYTwiz10y6ZyN2TemdMN+k8oLG+jBgYGykDV9P7QXby5mQGIlHWiSqHfjES1t25raLvb2fab/1gQQ==",
   "success": true,
   "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj",
   "expectedPackageFiles": [

@@ -21,7 +21,7 @@ namespace Api.Service.Services
             return await _repository.DeleteAsync(id);
         }
 
-        public async Task<UserEntity?> Get(Guid id)
+        public async Task<UserEntity> Get(Guid id)
         {
             return await _repository.SelectAsync(id);
         }

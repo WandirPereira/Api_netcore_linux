@@ -84,3 +84,8 @@
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/bin/Debug/net6.0/Data.pdb
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/bin/Debug/net6.0/AutoMapper.dll
 /home/wandir/Documentos/api_netcore_linux/src/Api.Application/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.application.Microsoft.AspNetCore.StaticWebAssets.props
+/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.build.application.props
+/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.application.props
+/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.application.props
+/home/wandir/Documentos/api_netcore_linux/src/Api.Application/obj/Debug/net6.0/staticwebassets.pack.json
