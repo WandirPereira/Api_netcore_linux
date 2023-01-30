@@ -20,7 +20,8 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DOTNET_CLI_UI_LANGUAGE": "en-us"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
