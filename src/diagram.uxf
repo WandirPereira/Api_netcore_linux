@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>40</y><w>380</w><h>170</h></coordinates><panel_attributes>public abstract class BaseEntity
+Package::Api.Domain.Entities
+--
+   [Key]
+    public Guid Id { get; set; }
+    private DateTime? _createAt;
+    public DateTime? CreateAt {
+        get { return _createAt; }
+        set { _createAt = (value == null ? DateTime.UtcNow : value); }
+    }
+    public DateTime? UpdateAt { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>250</y><w>210</w><h>80</h></coordinates><panel_attributes>public class UserEntity : BaseEntity
+Package::Api.Domain.Entities
+--
+   public string? Name { get; set; }
+   public string? Email { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>200</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>250</y><w>320</w><h>140</h></coordinates><panel_attributes>public interface IRepository&lt;T&gt; where T : BaseEntity
+Package::Domain.Interface
+--
+-Task&lt;T&gt; InsertAsync(T item);
+-Task&lt;T?&gt; UpdateAsync(T item);
+-Task&lt;bool&gt; DeleteAsync(Guid id);
+-Task&lt;T?&gt; SelectAsync(Guid id);
+-Task&lt;IEnumerable&lt;T&gt;&gt; SelectAsync();
+-Task&lt;bool&gt; ExistAsync(Guid id);
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>460</y><w>210</w><h>70</h></coordinates><panel_attributes>public class BaseRepository&lt;T&gt; :
+ IRepository&lt;T&gt; where T : BaseEntity
+Package::Api.Data.Repository
+--
+Implementation of Methods</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>380</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>600</y><w>370</w><h>80</h></coordinates><panel_attributes>public class UserImplementation : 
+BaseRepository&lt;UserEntity&gt;, IUserRepository
+Package::Api.Data.Implementations
+--
+public async Task&lt;UserEntity?&gt; FindByLogin(string email)
+   </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>520</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>460</y><w>270</w><h>80</h></coordinates><panel_attributes>public interface IUserRepository : 
+IRepository&lt;UserEntity&gt;
+Package::Api.Domain.Repository
+--
+Task&lt;UserEntity?&gt; FindByLogin(string email);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>530</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>380</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element></diagram>
