@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj": {}
+    "/home/wandir/Documents/api_netcore_linux/src/Api.Service/Service.csproj": {}
   },
   "projects": {
-    "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj": {
+    "/home/wandir/Documents/api_netcore_linux/src/Api.Data/Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj",
+        "projectUniqueName": "/home/wandir/Documents/api_netcore_linux/src/Api.Data/Data.csproj",
         "projectName": "Data",
-        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj",
+        "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Data/Data.csproj",
         "packagesPath": "/home/wandir/.nuget/packages/",
-        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/obj/",
+        "outputPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/wandir/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj"
+              "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+    "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "projectUniqueName": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+        "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
         "packagesPath": "/home/wandir/.nuget/packages/",
-        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/obj/",
+        "outputPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/wandir/.nuget/NuGet/NuGet.Config"
@@ -136,14 +136,14 @@
         }
       }
     },
-    "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj": {
+    "/home/wandir/Documents/api_netcore_linux/src/Api.Service/Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj",
+        "projectUniqueName": "/home/wandir/Documents/api_netcore_linux/src/Api.Service/Service.csproj",
         "projectName": "Service",
-        "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/Service.csproj",
+        "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Service/Service.csproj",
         "packagesPath": "/home/wandir/.nuget/packages/",
-        "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Service/obj/",
+        "outputPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/wandir/.nuget/NuGet/NuGet.Config"
@@ -158,11 +158,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj": {
-                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Data/Data.csproj"
+              "/home/wandir/Documents/api_netcore_linux/src/Api.Data/Data.csproj": {
+                "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Data/Data.csproj"
               },
-              "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj": {
-                "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj"
+              "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj"
               }
             }
           }

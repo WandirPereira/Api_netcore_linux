@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2sR6cj84LnKQz2Hf7EAd3rAYKm4ZnN9dPPolFYtvjNW/XIzg94rfDwfVhYK5xJvrFtQattEak+ZSVs7UN9Ykfg==",
+  "dgSpecHash": "SOXSJK2kNX4V4zI4S1K4zpGU0tfZnlCbSo68CHlGXrJauNcTjUOUa0Kvmh5XrSe4iroVVt3PMjGVGOndOf3ARw==",
   "success": true,
-  "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj",
+  "projectFilePath": "/home/wandir/Documents/api_netcore_linux/src/Api.CrossCutting/CrossCutting.csproj",
   "expectedPackageFiles": [
     "/home/wandir/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

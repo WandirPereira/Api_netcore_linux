@@ -1,0 +1,57 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>30</x><y>0</y><w>380</w><h>170</h></coordinates><panel_attributes>*public abstract class BaseEntity*
+Package::Api.Domain.Entities
+--
+   [Key]
+    public Guid Id { get; set; }
+    private DateTime? _createAt;
+    public DateTime? CreateAt {
+        get { return _createAt; }
+        set { _createAt = (value == null ? DateTime.UtcNow : value); }
+    }
+    public DateTime? UpdateAt { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>210</y><w>210</w><h>80</h></coordinates><panel_attributes>*public class UserEntity : BaseEntity*
+Package::Api.Domain.Entities
+--
+   public string? Name { get; set; }
+   public string? Email { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>160</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>210</y><w>320</w><h>140</h></coordinates><panel_attributes>*public interface IRepository&lt;T&gt; where T : BaseEntity*
+Package::Domain.Interface
+--
+-Task&lt;T&gt; InsertAsync(T item);
+-Task&lt;T?&gt; UpdateAsync(T item);
+-Task&lt;bool&gt; DeleteAsync(Guid id);
+-Task&lt;T?&gt; SelectAsync(Guid id);
+-Task&lt;IEnumerable&lt;T&gt;&gt; SelectAsync();
+-Task&lt;bool&gt; ExistAsync(Guid id);
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>400</y><w>420</w><h>230</h></coordinates><panel_attributes>*public class BaseRepository&lt;T&gt; : IRepository&lt;T&gt; where T : BaseEntity*
+Package::Api.Data.Repository
+--
+private DbSet&lt;T&gt; _dataset;
+protected readonly MyContext _context;
+--
+public BaseRepository(MyContext context) {
+    _context = context;
+    _dataset = _context.Set&lt;T&gt;();
+}
+--
+-Task&lt;T&gt; InsertAsync(T item);
+-Task&lt;T?&gt; UpdateAsync(T item);
+-Task&lt;bool&gt; DeleteAsync(Guid id);
+-Task&lt;T?&gt; SelectAsync(Guid id);
+-Task&lt;IEnumerable&lt;T&gt;&gt; SelectAsync();
+-Task&lt;bool&gt; ExistAsync(Guid id);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>340</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>230</x><y>660</y><w>490</w><h>130</h></coordinates><panel_attributes>*public class UserImplementation : BaseRepository&lt;UserEntity&gt;, IUserRepository*
+Package::Api.Data.Implementations
+--
+private DbSet&lt;UserEntity&gt; _dataset;
+--
+public UserImplementation(MyContext context) : base(context){
+     _dataset = _context.Set&lt;UserEntity&gt;();        
+}
+--
+public async Task&lt;UserEntity?&gt; FindByLogin(string email)
+   </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>400</y><w>360</w><h>70</h></coordinates><panel_attributes>*public interface IUserRepository : IRepository&lt;UserEntity&gt;*
+Package::Api.Domain.Repository
+--
+Task&lt;UserEntity?&gt; FindByLogin(string email);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>460</y><w>30</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>340</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>620</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>

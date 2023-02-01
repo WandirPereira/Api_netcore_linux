@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/BeiAIgTdb71+TK71Nbxm2KLlqcKhWYtfSoMl5Ir+cReA5GYfS3IBLHlDBFaLfyODuTlDPCpqCRnPAMB+oDs+w==",
+  "dgSpecHash": "Bl5G5nwTGkv47Vr8VLeU+s+dy6PBrCgcL2OwObUTugDvr+wPgVq0zuxhRdHsHLVEj777uGY350tX6QVRUFJF3g==",
   "success": true,
-  "projectFilePath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+  "projectFilePath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

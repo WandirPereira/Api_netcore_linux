@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>50</x><y>20</y><w>280</w><h>120</h></coordinates><panel_attributes>*public interface IUserService*
+Package::Api.Domain.Interface.Services.User
+--
+Task&lt;UserEntity?&gt; Get(Guid id);
+Task&lt;IEnumerable&lt;UserEntity&gt;&gt; GetAll();
+Task&lt;UserEntity&gt; Post(UserEntity user);
+Task&lt;UserEntity?&gt; Put(UserEntity user);
+Task&lt;bool&gt; Delete(Guid id);-id: Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>200</y><w>330</w><h>190</h></coordinates><panel_attributes>*public class UserService : IUserService*
+Package::Api.Service.Services
+--
+private IRepository&lt;UserEntity&gt; _repository;
+--
+ public UserService(IRepository&lt;UserEntity&gt; repository){
+            _repository = repository;
+ }
+--
+Task&lt;UserEntity?&gt; Get(Guid id);
+Task&lt;IEnumerable&lt;UserEntity&gt;&gt; GetAll();
+Task&lt;UserEntity&gt; Post(UserEntity user);
+Task&lt;UserEntity?&gt; Put(UserEntity user);
+Task&lt;bool&gt; Delete(Guid id);-id: Long</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>130</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+      "projectUniqueName": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/Domain.csproj",
+      "projectPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
       "packagesPath": "/home/wandir/.nuget/packages/",
-      "outputPath": "/home/wandir/Documentos/api_netcore_linux/src/Api.Domain/obj/",
+      "outputPath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/wandir/.nuget/NuGet/NuGet.Config"

@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen(c =>
         {
             Version = "v1",
             Title = "API NET 6 Linux",
-            Description = "Criando uma NET Core 6 no Linux Ubuntu 22.04",
+            Description = "Criando uma API NET Core 6 no Linux Ubuntu 22.04",
             TermsOfService = new Uri("http://www.google.com"),
             Contact = new OpenApiContact
             {
