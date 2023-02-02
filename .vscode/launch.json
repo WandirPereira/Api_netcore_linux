@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/Api.Application/bin/Debug/net6.0/application.dll",
+            "program": "${workspaceFolder}/src/Api.Application/bin/Debug/net7.0/application.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/Api.Application",
             "stopAtEntry": false,
@@ -20,8 +20,7 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development",
-                "DOTNET_CLI_UI_LANGUAGE": "en-us"
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

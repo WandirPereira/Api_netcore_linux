@@ -11,6 +11,6 @@ namespace Api.Domain.Dtos
         [Required(ErrorMessage = "Email é um campo obrigatório!")]
         [EmailAddress(ErrorMessage = "Email em formato inválido!")]
         [StringLength(100, ErrorMessage = "O email deve ter no máximo {1} caracteres!")]
-        public string Email { get; set; }
+        public string? Email { get; set; }
     }
 }

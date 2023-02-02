@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interface;
 using Api.Domain.Interface.Services.User;
+using Api.Domain.Security;
 
 namespace Api.Service.Services
 {

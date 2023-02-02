@@ -1,11 +1,20 @@
 using Api.CrossCutting.DependencyInjection;
 using Api.Data.Context;
+using Api.Domain.Security;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+Environment.SetEnvironmentVariable("DB_CONNECTION", "Persist Security Info=True;Server=localhost;Port=3306;DataBase=dbAPI_NET6_Integration;Uid=root;Pwd=mudar@123");
+Environment.SetEnvironmentVariable("DATABASE", "MYSQL");
+Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
+Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
+Environment.SetEnvironmentVariable("Seconds", "28800");
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -32,6 +41,14 @@ builder.Services.AddSwaggerGen(c =>
     });
 ConfigureService.ConfigureDependenciesService(builder.Services);
 ConfigureRepository.ConfigureDependenciesRepository(builder.Services);
+
+var signingConfigurations = new SigningConfigurations();
+builder.Services.AddSingleton(signingConfigurations);
+
+//var tokenConfiguration = new TokenConfiguration();
+// new ConfigureFromConfigurationOptions<TokenConfiguration>(
+//     Configuration("TokenConfiguration").Configure(tokenConfiguration);
+// )
 
 var app = builder.Build();
 

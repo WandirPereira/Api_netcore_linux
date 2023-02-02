@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "Bl5G5nwTGkv47Vr8VLeU+s+dy6PBrCgcL2OwObUTugDvr+wPgVq0zuxhRdHsHLVEj777uGY350tX6QVRUFJF3g==",
+  "dgSpecHash": "Toidxl6Aa/jmfANFsw6hc+/4dcbPmzvVQ5a6V+L8yKYXWvxJlTSE+8uO+cOqiYfQIrXwKAagTfPNCYSgqUQ++g==",
   "success": true,
   "projectFilePath": "/home/wandir/Documents/api_netcore_linux/src/Api.Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/wandir/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.identitymodel.abstractions/6.26.0/microsoft.identitymodel.abstractions.6.26.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.26.0/microsoft.identitymodel.jsonwebtokens.6.26.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.identitymodel.logging/6.26.0/microsoft.identitymodel.logging.6.26.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.identitymodel.tokens/6.26.0/microsoft.identitymodel.tokens.6.26.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.identitymodel.tokens.jwt/6.26.0/system.identitymodel.tokens.jwt.6.26.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/home/wandir/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }
