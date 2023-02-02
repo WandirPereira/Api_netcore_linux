@@ -19,15 +19,16 @@ namespace Api.Service.Services
     {
         private IUserRepository _repository;
         private SigningConfigurations _signingConfigurations;
-        private IConfiguration _configuration { get; }
+        //private IConfiguration _configuration { get; }
 
         public LoginService(IUserRepository repository,
-                            SigningConfigurations signingConfigurations,
-                            IConfiguration configuration)
+                            SigningConfigurations signingConfigurations
+                            //,IConfiguration configuration
+                            )
         {
             _repository = repository;
             _signingConfigurations = signingConfigurations;
-            _configuration = configuration;
+            //_configuration = configuration;
         }
 
         public async Task<object?> FindByLogin(LoginDto login)
@@ -57,7 +58,6 @@ namespace Api.Service.Services
                     );
                     DateTime createDate = DateTime.Now;
                     DateTime expirationDate = createDate + TimeSpan.FromSeconds(Convert.ToInt32(Environment.GetEnvironmentVariable("Seconds")));
-
                     var handler = new JwtSecurityTokenHandler();
                     string token = CreateToken(identity, createDate, expirationDate, handler);
                     return SuccessObject(createDate, expirationDate, token, baseUser);

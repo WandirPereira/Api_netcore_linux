@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Api.Domain.Dtos;
 using Api.Domain.Entities;
 using Api.Domain.Interface.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -24,6 +25,7 @@ namespace Api.Application.Controllers
         // }
 
         //usando [FromBody] e [FromServices] para fazer a injeção de dependência
+        [AllowAnonymous]
         [HttpPost]
         public async Task<object> Login([FromBody] LoginDto loginDto, [FromServices] ILoginService service)
         {
