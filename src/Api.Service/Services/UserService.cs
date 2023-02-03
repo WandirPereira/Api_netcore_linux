@@ -30,7 +30,7 @@ namespace Api.Service.Services
         public async Task<UserDto?> Get(Guid id)
         {
             var entity = await _repository.SelectAsync(id);
-            return _mapper.Map<UserDto>(entity);
+            return _mapper.Map<UserDto>(entity) ?? new UserDto();
         }
 
         public async Task<IEnumerable<UserDto>> GetAll()
@@ -39,7 +39,7 @@ namespace Api.Service.Services
             return _mapper.Map<IEnumerable<UserDto>>(listEntity);
         }
 
-        public async Task<UserDtoCreateResult> Post(UserDto user)
+        public async Task<UserDtoCreateResult> Post(UserDtoCreate user)
         {
             //return await _repository.InsertAsync(user);
             var model = _mapper.Map<UserModel>(user);
@@ -48,7 +48,7 @@ namespace Api.Service.Services
             return _mapper.Map<UserDtoCreateResult>(result);
         }
 
-        public async Task<UserDtoUpdateResult?> Put(UserDto user)
+        public async Task<UserDtoUpdateResult?> Put(UserDtoUpdate user)
         {
             //return await _repository.UpdateAsync(user);
             var model = _mapper.Map<UserModel>(user);

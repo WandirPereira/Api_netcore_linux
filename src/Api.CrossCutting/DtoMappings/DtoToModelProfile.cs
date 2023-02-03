@@ -13,6 +13,8 @@ namespace Api.CrossCutting.DtoMappings
         public DtoToModelProfile()
         {
             CreateMap<UserModel, UserDto>().ReverseMap();   //mapeia de Model para Dto e de Dto para Model
+            CreateMap<UserModel, UserDtoCreate>().ReverseMap();
+            CreateMap<UserModel, UserDtoUpdate>().ReverseMap();
         }
     }
 }
