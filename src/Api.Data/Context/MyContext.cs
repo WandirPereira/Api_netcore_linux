@@ -15,6 +15,7 @@ namespace Api.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //modelBuilder.UseGuidCollation(string.Empty);
             modelBuilder.Entity<UserEntity>(new UserMapping().Configure);
         }
     }
