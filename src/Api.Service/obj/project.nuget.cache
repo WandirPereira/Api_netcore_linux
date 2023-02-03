@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "OtCSiyJnz5dmcFT0NQCwGsQ+6gfi+rvq5x0pO7YVX5yRvYAsxs9ut5vnSISOb3co5FFvUCTPrpogOTkZHRYpYg==",
+  "dgSpecHash": "kWjfzIEnXNoSSYexH7ue8NOuaKSYMMpcR1xznbus4vEHPheH+10f/SJsr+apvgmrIQ05TUvAm/DJfHmCdoaaBg==",
   "success": true,
   "projectFilePath": "/home/wandir/Documents/api_netcore_linux/src/Api.Service/Service.csproj",
   "expectedPackageFiles": [
+    "/home/wandir/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/wandir/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/home/wandir/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",
     "/home/wandir/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/home/wandir/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",

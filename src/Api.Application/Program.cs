@@ -1,6 +1,8 @@
 using Api.CrossCutting.DependencyInjection;
+using Api.CrossCutting.DtoMappings;
 using Api.Data.Context;
 using Api.Domain.Security;
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +68,17 @@ builder.Services.AddSwaggerGen(c =>
     });
 ConfigureService.ConfigureDependenciesService(builder.Services);
 ConfigureRepository.ConfigureDependenciesRepository(builder.Services);
+
+//Configurando AutoMapper pára mapear dtos
+var config = new AutoMapper.MapperConfiguration(cfg =>
+{
+    cfg.AddProfile(new DtoToModelProfile());
+    cfg.AddProfile(new EntityToDtoProfile());
+    cfg.AddProfile(new ModelToEntityProfile());
+});
+
+IMapper mapper = config.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 var signingConfigurations = new SigningConfigurations();
 builder.Services.AddSingleton(signingConfigurations);

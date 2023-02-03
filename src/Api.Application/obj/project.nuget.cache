@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zlEuTtXeOdUwIBtMW4a3IisCHeP6n3gL4zKy4Zjde7fMPamu0NrDgBAWM+hDay+eXo1+GVOVyw9r1O6AOyncBA==",
+  "dgSpecHash": "tNCgY9iQ4S8bEb9LyCME4X0QE/VZgPLcEH4n+Aj2eamQBUIAX+fupRQxaNooBPwuBod/WwH2xAfrowRj9+1CNQ==",
   "success": true,
   "projectFilePath": "/home/wandir/Documents/api_netcore_linux/src/Api.Application/application.csproj",
   "expectedPackageFiles": [
-    "/home/wandir/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/home/wandir/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/wandir/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/wandir/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
