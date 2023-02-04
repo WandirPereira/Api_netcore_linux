@@ -17,6 +17,18 @@ namespace Api.Data.Context
             base.OnModelCreating(modelBuilder);
             //modelBuilder.UseGuidCollation(string.Empty);
             modelBuilder.Entity<UserEntity>(new UserMapping().Configure);
+
+            //cria o usuário administrador - seed
+            modelBuilder.Entity<UserEntity>().HasData(
+                new UserEntity
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Administrador",
+                    Email = "admin@mail.com",
+                    CreateAt = DateTime.Now,
+                    UpdateAt = DateTime.Now,
+                }
+            );
         }
     }
 }

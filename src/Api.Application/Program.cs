@@ -15,10 +15,10 @@ var environment = builder.Environment;
 // Add services to the container.
 //if (environment.IsEnvironment("Development"))
 //{
-Environment.SetEnvironmentVariable("DB_CONNECTION_SQLSERVER", "Server=localhost;Database=dbapi;User ID=sa;Password=senha@1234;Encrypt=False");
+Environment.SetEnvironmentVariable("DB_CONNECTION_SQLSERVER", "Server=localhost;Database=dbapi2;User ID=sa;Password=senha@1234;Encrypt=False");
 Environment.SetEnvironmentVariable("DB_CONNECTION_MYSQL", "Server=localhost;Port=3306;DataBase=dbAPI;Uid=root;Pwd=senha@1234");
 Environment.SetEnvironmentVariable("DATABASE", "SQLSERVER");  //MYSQL OR SQLSERVER
-//Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
+Environment.SetEnvironmentVariable("MIGRATION", "APLICAR");
 Environment.SetEnvironmentVariable("Audience", "ExemploAudience");
 Environment.SetEnvironmentVariable("Issuer", "ExemploIssue");
 Environment.SetEnvironmentVariable("Seconds", "28800");
@@ -135,7 +135,13 @@ if (app.Environment.IsDevelopment())
     );
 }
 
-
+//Executa as migrations, NA INICIALIZAÇÃO,  quando a variável de ambiente estiver setada como "APLICAR"
+if (Environment.GetEnvironmentVariable("MIGRATION")!.ToLower() == "APLICAR".ToLower())
+{
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<MyContext>();
+    db.Database.Migrate();
+}
 
 app.UseAuthorization();
 
