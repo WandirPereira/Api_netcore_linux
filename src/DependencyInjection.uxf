@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>170</y><w>1140</w><h>160</h></coordinates><panel_attributes>*public class ConfigureRepository*
+Package::Api.CrossCutting.DependencyInjection
+--
+public static void ConfigureDependenciesRepository(IServiceCollection serviceCollection){
+    serviceCollection.AddScoped(typeof(IRepository&lt;&gt;), typeof(BaseRepository&lt;&gt;));
+    serviceCollection.AddScoped&lt;IUserRepository, UserImplementation&gt;();
+    if (Environment.GetEnvironmentVariable("DATABASE")!.ToLower() == "SQLSERVER".ToLower())
+           serviceCollection.AddDbContext&lt;MyContext&gt;(options =&gt; options.UseSqlServer(Environment.GetEnvironmentVariable("DB_CONNECTION_SQLSERVER")));
+     else
+            serviceCollection.AddDbContext&lt;MyContext&gt;(options =&gt; options.UseMySql(Environment.GetEnvironmentVariable("DB_CONNECTION_MYSQL"),new MySqlServerVersion(new Version(8, 0, 21))));}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>10</y><w>490</w><h>130</h></coordinates><panel_attributes>*public class ConfigureService*
+Package::Api.CrossCutting.DependencyInjection
+--
+public static void ConfigureDependenciesService(IServiceCollection serviceCollection)
+{
+      serviceCollection.AddTransient&lt;IUserService, UserService&gt;();
+      serviceCollection.AddTransient&lt;ILoginService, LoginService&gt;();
+}</panel_attributes><additional_attributes></additional_attributes></element></diagram>

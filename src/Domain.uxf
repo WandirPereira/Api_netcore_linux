@@ -1,0 +1,83 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>40</x><y>340</y><w>230</w><h>110</h></coordinates><panel_attributes>*public class UserDto*
+Package::Api.Domain.Dtos.User
+--
+public Guid Id { get; set; }
+public string? Name { get; set; }
+public string? Email { get; set; }
+public DateTime UpdateAt { get; set; }</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>130</y><w>230</w><h>110</h></coordinates><panel_attributes>*public class UserDtoCreateResult*
+Package::Api.Domain.Dtos.User
+--
+public Guid Id { get; set; }
+public string? Name { get; set; }
+public string? Email { get; set; }
+public DateTime CreateAt { get; set; }</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>10</y><w>210</w><h>80</h></coordinates><panel_attributes>*public class UserDtoCreate*
+Package::Api.Domain.Dtos.User
+--
+public string? Name { get; set; }
+public string? Email { get; set; }</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>0</y><w>200</w><h>90</h></coordinates><panel_attributes>*public class UserDtoUpdate*
+Package::Api.Domain.Dtos.User
+--
+public Guid Id { get; set; }
+public string? Name { get; set; }
+public string? Email { get; set; }</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>220</y><w>210</w><h>80</h></coordinates><panel_attributes>*public class UserEntity : BaseEntity*
+Package::Api.Domain.Entities
+--
+   public string? Name { get; set; }
+   public string? Email { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>170</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>10</y><w>380</w><h>170</h></coordinates><panel_attributes>*public abstract class BaseEntity*
+Package::Api.Domain.Entities
+--
+   [Key]
+    public Guid Id { get; set; }
+    private DateTime? _createAt;
+    public DateTime? CreateAt {
+        get { return _createAt; }
+        set { _createAt = (value == null ? DateTime.UtcNow : value); }
+    }
+    public DateTime? UpdateAt { get; set; }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>130</y><w>230</w><h>110</h></coordinates><panel_attributes>*public class UserDtoUpdateResult*
+Package::Api.Domain.Dtos.User
+--
+public Guid Id { get; set; }
+public string? Name { get; set; }
+public string? Email { get; set; }
+public DateTime UpdateAt { get; set; }</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>270</y><w>460</w><h>310</h></coordinates><panel_attributes>*public class UserModel*
+Package::Api.Domain.Dtos.User
+--
+private Guid _id;
+public Guid Id { get { return _id; }  set { _id = value; } }
+
+private string? _name;
+public string? Name { get { return _name!; }  set { _name = value; } }
+
+private string? _email;
+public string? Email { get { return _email!; } set { _email = value; } }
+
+private DateTime? _createAt;
+public DateTime? CreateAt{ 
+   get { return _createAt; }   
+   set { _createAt = (value == null ? DateTime.UtcNow : value); } 
+}
+
+private DateTime? _updateAt;
+public DateTime? UpdateAt{ get { return _updateAt; }  set { _updateAt = value; } }
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>480</y><w>350</w><h>120</h></coordinates><panel_attributes>*public class DtoToModelProfile : Profile*
+Package::Api.CrossCutting.DtoMappings
+--
+public DtoToModelProfile(){
+   CreateMap&lt;UserModel, UserDto&gt;().ReverseMap();  
+   CreateMap&lt;UserModel, UserDtoCreate&gt;().ReverseMap();
+   CreateMap&lt;UserModel, UserDtoUpdate&gt;().ReverseMap();
+}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>600</y><w>390</w><h>120</h></coordinates><panel_attributes>*public class EntityToDtoProfile : Profile*
+Package::Api.CrossCutting.DtoMappings
+--
+public EntityToDtoProfile(){
+   CreateMap&lt;UserDto, UserEntity&gt;().ReverseMap();
+   CreateMap&lt;UserDtoCreateResult, UserEntity&gt;().ReverseMap();
+   CreateMap&lt;UserDtoUpdateResult, UserEntity&gt;().ReverseMap();
+}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>620</y><w>350</w><h>100</h></coordinates><panel_attributes>*public class ModelToEntityProfile : Profile*
+Package::Api.CrossCutting.DtoMappings
+--
+public ModelToEntityProfile(){
+   CreateMap&lt;UserEntity, UserModel&gt;().ReverseMap();
+}</panel_attributes><additional_attributes></additional_attributes></element></diagram>

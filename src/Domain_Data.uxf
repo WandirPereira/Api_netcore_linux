@@ -54,4 +54,23 @@ public async Task&lt;UserEntity?&gt; FindByLogin(string email)
    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>400</y><w>360</w><h>70</h></coordinates><panel_attributes>*public interface IUserRepository : IRepository&lt;UserEntity&gt;*
 Package::Api.Domain.Repository
 --
-Task&lt;UserEntity?&gt; FindByLogin(string email);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>460</y><w>30</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>340</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>620</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
+Task&lt;UserEntity?&gt; FindByLogin(string email);</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>460</y><w>30</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>340</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>620</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>0</y><w>440</w><h>160</h></coordinates><panel_attributes>*public class MyContext : DbContext*
+Package::Api.Data.Context
+--
+public DbSet&lt;UserEntity&gt;? Users { get; set; }
+public MyContext(DbContextOptions&lt;MyContext&gt; options) : base(options){}
+ protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    base.OnModelCreating(modelBuilder);
+    modelBuilder.Entity&lt;UserEntity&gt;(new UserMapping().Configure);
+}        </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>190</y><w>410</w><h>160</h></coordinates><panel_attributes>*public class UserMapping : IEntityTypeConfiguration&lt;UserEntity&gt;*
+Package::Api.Data.Mapping
+--
+public void Configure(EntityTypeBuilder&lt;UserEntity&gt; builder)
+{
+   builder.ToTable("User");
+   builder.HasKey(u =&gt; u.Id);
+   builder.HasIndex(u =&gt; u.Email).IsUnique();
+   builder.Property(u =&gt; u.Name).IsRequired().HasMaxLength(60);
+   builder.Property(u =&gt; u.Email).HasMaxLength(100);
+}</panel_attributes><additional_attributes></additional_attributes></element></diagram>
