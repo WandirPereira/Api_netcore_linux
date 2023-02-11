@@ -31,6 +31,7 @@ namespace Api.Application.Test.Usuario.QuandoRequisitarCreate
             );
 
             _controller = new UsersController(serviceMock.Object); //UsersController recebe um IUserService
+            //precisa no link porque na implementação do endpoint Create o link é buscado para ser enviado como retorno
             Mock<IUrlHelper> url = new Mock<IUrlHelper>();
             url.Setup(x => x.Link(It.IsAny<string>(), It.IsAny<object>())).Returns("http://localhost:5000");  //fake
             _controller.Url = url.Object;  //o controller precisa de uma url

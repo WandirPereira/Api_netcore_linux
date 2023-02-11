@@ -32,9 +32,6 @@ namespace Api.Application.Test.Usuario.QuandoRequisitarUpdate
             );
 
             _controller = new UsersController(serviceMock.Object); //UsersController recebe um IUserService
-            Mock<IUrlHelper> url = new Mock<IUrlHelper>();
-            url.Setup(x => x.Link(It.IsAny<string>(), It.IsAny<object>())).Returns("http://localhost:5000");  //fake
-            _controller.Url = url.Object;  //o controller precisa de uma url
 
             var userDtoUpdate = new UserDtoUpdate
             {
