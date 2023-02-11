@@ -18,13 +18,14 @@ namespace Api.Application.Controllers
 
     public class UsersController : ControllerBase
     {
-        private readonly ILogger<UsersController> _logger;
+        //private readonly ILogger<UsersController> _logger;
 
         private readonly IUserService _service;
 
-        public UsersController(ILogger<UsersController> logger, IUserService service)
+        //public UsersController(ILogger<UsersController> logger, IUserService service)
+        public UsersController(IUserService service)
         {
-            _logger = logger;
+            //_logger = logger;
             _service = service;
         }
 

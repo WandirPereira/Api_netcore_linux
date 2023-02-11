@@ -56,6 +56,16 @@
                 "${workspaceFolder}/src/Api.Service.Test/Api.Service.Test.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Application.Testes",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/src/Api.Application.Test/Api.Application.Test.csproj"
+            ],
+            "problemMatcher": "$msCompile"
         }
     ]
 }
