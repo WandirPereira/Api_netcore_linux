@@ -20,7 +20,14 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DB_CONNECTION_SQLSERVER": "Server=localhost;Database=dbapi;User ID=sa;Password=senha@1234;Encrypt=False",
+                "DB_CONNECTION_MYSQL": "Server=localhost;Port=3306;DataBase=dbAPI;Uid=root;Pwd=senha@1234",
+                "DATABASE": "SQLSERVER", //MYSQL OR SQLSERVER
+                "MIGRATION": "NAO_APLICAR",
+                "Audience": "ExemploAudience",
+                "Issuer": "ExemploIssue",
+                "Seconds": "28800"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

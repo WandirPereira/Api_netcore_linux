@@ -16,4 +16,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include ="\Api.Integration.Test\Api.Integration.Test.csproj"/>
+  </ItemGroup>
+
 </Project>

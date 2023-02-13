@@ -23,4 +23,8 @@
     <ProjectReference Include="..\Api.Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include ="\Api.Integration.Test\Api.Integration.Test.csproj"/>
+  </ItemGroup>
+
 </Project>
